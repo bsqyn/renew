@@ -1,10 +1,1 @@
-31.59.20.176:6754:udokqbdf:o565iucyq3ym
-45.38.107.97:6014:udokqbdf:o565iucyq3ym
-198.105.121.200:6462:udokqbdf:o565iucyq3ym
-64.137.96.74:6641:udokqbdf:o565iucyq3ym
-198.23.243.226:6361:udokqbdf:o565iucyq3ym
-38.154.185.97:6370:udokqbdf:o565iucyq3ym
-84.247.60.125:6095:udokqbdf:o565iucyq3ym
-142.111.67.146:5611:udokqbdf:o565iucyq3ym
-191.96.254.138:6185:udokqbdf:o565iucyq3ym
-31.58.9.4:6077:udokqbdf:o565iucyq3ym
+170.39.230.8:20033:laNBiZnAhx:IhMkYhCRPZ
