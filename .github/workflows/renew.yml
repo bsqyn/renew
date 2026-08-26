@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   check:
@@ -110,3 +110,22 @@ jobs:
       with:
         path: proxy-cooldown.json
         key: katabump-proxy-cooldown-${{ github.run_id }}
+
+    - name: Commit and Push JavLibrary Markdown
+      if: always()
+      run: |
+        git config user.name "github-actions[bot]"
+        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+        if [ -d "JavLibrary" ]; then
+          git add JavLibrary/
+
+          if git diff --cached --quiet; then
+            echo "没有新的 JavLibrary Markdown 文件需要提交。"
+          else
+            git commit -m "Update JavLibrary page $(date -u +%Y-%m-%d)"
+            git push
+          fi
+        else
+          echo "JavLibrary 目录不存在，跳过提交。"
+        fi
